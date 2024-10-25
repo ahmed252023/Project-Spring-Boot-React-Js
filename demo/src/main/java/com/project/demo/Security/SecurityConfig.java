@@ -11,7 +11,7 @@ package com.project.demo.Security;
 //@Configuration
 //@EnableWebSecurity
 
-public class SecurityConfig {
+//public class SecurityConfig {
 	
 //	 @Bean
 //	    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -29,4 +29,4 @@ public class SecurityConfig {
 //	    public PasswordEncoder passwordEncoder() {
 //	        return new BCryptPasswordEncoder(); // for encoding passwords
 //	    }
-	}
+//	}

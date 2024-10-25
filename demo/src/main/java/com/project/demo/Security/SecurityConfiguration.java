@@ -37,8 +37,8 @@ public class SecurityConfiguration {
 	        .csrf(AbstractHttpConfigurer::disable) // Disable CSRF
 	        .authorizeHttpRequests(authz -> authz
 	            .requestMatchers("/api/v1/auth/**").permitAll() // Allow all requests for the auth path
-	            .requestMatchers("/api/v1/admin").hasAuthority("ROLE_ADMIN") // Allow only ADMIN role for admin path
-	            .requestMatchers("/api/v1/user").hasAuthority("ROLE_USER")   // Allow only USER role for user path
+	            .requestMatchers("/api/v1/admin").hasAuthority("ADMIN") // Allow only ADMIN role for admin path
+	            .requestMatchers("/api/v1/user").hasAuthority("USER")   // Allow only USER role for user path
 	            .anyRequest().authenticated() // Any other request must be authenticated
 	        )
 	        .sessionManagement(session -> session

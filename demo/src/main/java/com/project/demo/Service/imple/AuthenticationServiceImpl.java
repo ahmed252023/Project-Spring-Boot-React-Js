@@ -18,8 +18,6 @@ import com.project.demo.entity.Role;
 import com.project.demo.entity.User;
 
 import lombok.RequiredArgsConstructor;
-import lombok.val;
-import lombok.experimental.var;
 
 @Service
 @RequiredArgsConstructor
